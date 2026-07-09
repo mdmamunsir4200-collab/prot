@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD Asraful Islam — Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,900&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-fixed"></div>
+    <div class="bg-lines"></div>
+    <div class="bg-grain"></div>
+    <div class="cur-o" id="co"></div>
+    <div class="cur-i" id="ci"></div>
+
+    <nav>
+      <a href="#" class="nav-logo"
+        ><span class="nav-dot"></span>Asraful Islam</a
+      >
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#learning">Learning</a></li>
+        <li>
+          <a href="#ai-chat" class="nav-ai"
+            ><span class="nav-ai-dot"></span>AI Chat</a
+          >
+        </li>
+        <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+      </ul>
+      <button class="mob-btn" id="mb">&#9776;</button>
+    </nav>
+    <div class="mob-nav" id="mn">
+      <a href="#about" onclick="cm()">About</a>
+      <a href="#projects" onclick="cm()">Work</a>
+      <a href="#learning" onclick="cm()">Learning</a>
+      <a href="#ai-chat" onclick="cm()" style="color: var(--red3)"
+        >AI Chat &#10022;</a
+      >
+      <a
+        href="#contact"
+        onclick="cm()"
+        style="color: var(--red); font-weight: 700"
+        >Hire Me</a
+      >
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+      <div class="particles" id="particles"></div>
+      <div class="scan-line"></div>
+      <div class="hero-issue-bg">01</div>
+
+      <div class="hero-grid">
+        <!-- LEFT -->
+        <div class="h-col h-left">
+          <div class="h-vol"></div>
+          <div>
+            <div class="h-tags">
+              <span class="htag">Full-Stack Dev</span>
+              <span class="htag">Frontend Expert</span>
+              <span class="htag">Bangladesh</span>
+              <span class="htag">Open to Work</span>
+            </div>
+            <div class="h-issue">
+              <div class="h-issue-num">01</div>
+              <div class="h-issue-lbl">Issue &mdash; 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="h-divider"></div>
+
+        <!-- CENTER -->
+        <div class="h-col h-center">
+          <div class="h-kicker">
+            <span class="kl"></span>Introducing the Developer
+          </div>
+          <h1 class="h-headline">
+            MD<br />
+            <em data-text="Asraful">Asraful</em>
+            <span>Islam</span>
+          </h1>
+          <p class="h-sub">
+            A <strong>full-stack developer</strong> from Bangladesh &mdash;
+            obsessed with building smart, modern apps using the latest
+            technologies. Always learning, always shipping.
+          </p>
+          <div class="h-badges">
+            <span class="hbadge hb-g"
+              ><span class="hbadge-dot"></span>Available for hire</span
+            >
+            <span class="hbadge hb-r">30+ Technologies</span>
+            <span class="hbadge hb-b">Full-Stack + AI</span>
+          </div>
+          <div class="h-btns">
+            <a href="#projects" class="btn-red">View My Work &rarr;</a>
+            <a href="./cv.pdf" download="Asraful_Islam_CV.pdf" class="btn-ghost"
+              >Download CV &#8681;</a
+            >
+            <a href="#ai-chat" class="btn-ghost">Chat with AI &#10022;</a>
+          </div>
+          <div class="h-metrics">
+            <div class="hm">
+              <div class="hm-n"><span id="c1">0</span>+</div>
+              <div class="hm-l">Technologies</div>
+            </div>
+            <div class="hm">
+              <div class="hm-n"><span id="c2">0</span>+</div>
+              <div class="hm-l">Domains</div>
+            </div>
+            <div class="hm">
+              <div class="hm-n"><span id="c3">0</span></div>
+              <div class="hm-l">Years Learning</div>
+            </div>
+            <div class="hm">
+              <div class="hm-n"><span id="c4">&infin;</span></div>
+              <div class="hm-l">Curiosity</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-divider"></div>
+
+        <!-- RIGHT — CIRCLE PROFILE -->
+        <div class="h-col h-right">
+          <div class="profile-wrapper">
+            <!-- spinning ring + circle photo -->
+            <div style="position: relative">
+              <div class="profile-ring">
+                <div class="profile-ring-inner">
+                  <div class="profile-photo">
+                    <img
+                      src="https://res.cloudinary.com/none909099/image/upload/v1781678161/ChatGPT_Image_Jun_4_2026_12_45_42_PM_tjtbep.png"
+                      alt="MD Asraful Islam"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="profile-scan"></div>
+              <div class="profile-live">
+                <div class="live-dot"></div>
+                Available
+              </div>
+            </div>
+
+            <!-- Name -->
+            <div class="photo-name-label">
+              <div class="pn">MD Asraful Islam</div>
+              <div class="pr">Full-Stack Developer</div>
+            </div>
+
+            <!-- Info rows -->
+            <div class="p-rows">
+              <div class="p-row">
+                <span class="p-k">Status</span
+                ><span class="p-v" style="color: #4ade80"
+                  >&#9679; Available</span
+                >
+              </div>
+              <div class="p-row">
+                <span class="p-k">Location</span
+                ><span class="p-v">Bangladesh &#127475;&#127465;</span>
+              </div>
+              <div class="p-row">
+                <span class="p-k">Focus</span
+                ><span class="p-v">Full-Stack + AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TICKER -->
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <span class="ti">MD Asraful Islam</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Full-Stack Developer</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">React &middot; Next.js &middot; Angular</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Node &middot; Django &middot; FastAPI</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">TensorFlow &middot; Sklearn</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Flutter &middot; Mobile Dev</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Bangladesh &#127475;&#127465;</span
+          ><span class="ts">&#10022;</span> <span class="ti">Open to Work</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">MD Asraful Islam</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Full-Stack Developer</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">React &middot; Next.js &middot; Angular</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Node &middot; Django &middot; FastAPI</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">TensorFlow &middot; Sklearn</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Flutter &middot; Mobile Dev</span
+          ><span class="ts">&#10022;</span>
+          <span class="ti">Bangladesh &#127475;&#127465;</span
+          ><span class="ts">&#10022;</span> <span class="ti">Open to Work</span
+          ><span class="ts">&#10022;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="masthead">
+        <span class="mh-num">01 //</span>
+        <span class="mh-title">The Developer</span>
+        <div class="mh-line"></div>
+        <span class="mh-tag">About, Skills &amp; Stack</span>
+      </div>
+      <div class="about-wrap">
+        <div class="ab-bio">
+          <div class="ab-bio-left">
+            <div class="ab-identity rv">
+              <span class="id-pill ip-r">Full-Stack Dev</span>
+              <span class="id-pill ip-r">Frontend Expert</span>
+              <span class="id-pill ip-g">AI / ML Enthusiast</span>
+              <span class="id-pill ip-b">Mobile (Flutter)</span>
+              <span class="id-pill ip-r">Open to Work</span>
+              <span class="id-pill ip-g">Bangladesh &#127475;&#127465;</span>
+            </div>
+            <div class="ab-drop">
+              <p class="ab-p rv">
+                Hi, I'm <strong>Asraful</strong> &mdash; a driven, self-taught
+                developer from Bangladesh with a deep passion for building
+                smart, high-quality applications. My journey started with pure
+                curiosity and a blank text editor. What came out the other side
+                is a developer who spans the full width of the modern stack.
+              </p>
+            </div>
+            <p class="ab-p rv">
+              I move fast. I'm not the developer who waits for a perfect setup
+              &mdash; I <strong>adapt, learn, and ship</strong>. Whether it's a
+              React frontend, a Django API, a Flutter mobile app, or a
+              TensorFlow model, I pick up new tools in record time and use them
+              to build things that actually matter.
+            </p>
+            <div class="ab-quote rv">
+              "My main focus is building smart, modern apps with new features
+              &mdash; and I get genuinely excited about learning something new
+              every single day."
+            </div>
+            <p class="ab-p rv">
+              I'm highly proficient in
+              <strong>frontend engineering</strong> &mdash; from pixel-perfect
+              HTML/CSS/Tailwind to complex React, Angular, and Next.js
+              architectures. On the backend, I'm comfortable with Node.js,
+              Django, FastAPI, and Express. I also have a real interest in
+              <strong>AI/ML</strong>, working with Sklearn, TensorFlow, Pandas,
+              and NumPy.
+            </p>
+            <p class="ab-p rv">
+              Beyond that, I build for <strong>mobile</strong> with Flutter,
+              work with real-time systems using Socket.IO and WebRTC, automate
+              with Puppeteer, and manage everything through professional DevOps
+              workflows.
+            </p>
+            <div class="ab-stats rv">
+              <div class="ast">
+                <div class="ast-n">30+</div>
+                <div class="ast-l">Technologies</div>
+              </div>
+              <div class="ast">
+                <div class="ast-n">5+</div>
+                <div class="ast-l">Domains</div>
+              </div>
+              <div class="ast">
+                <div class="ast-n">&infin;</div>
+                <div class="ast-l">Curiosity</div>
+              </div>
+              <div class="ast">
+                <div class="ast-n">1</div>
+                <div class="ast-l">Mission</div>
+              </div>
+            </div>
+          </div>
+          <div class="ab-bio-right">
+            <div class="ab-rlbl rv">Core Identity</div>
+            <div
+              style="display: flex; flex-direction: column; gap: 0.55rem"
+              class="rv"
+            >
+              <div class="p-row">
+                <span class="p-k">Primary Focus</span
+                ><span class="p-v" style="color: var(--red3)"
+                  >Frontend + Full-Stack</span
+                >
+              </div>
+              <div class="p-row">
+                <span class="p-k">Secondary Focus</span
+                ><span class="p-v" style="color: #fbbf24">Mobile + AI/ML</span>
+              </div>
+              <div class="p-row">
+                <span class="p-k">Superpower</span
+                ><span class="p-v">Fast learner</span>
+              </div>
+              <div class="p-row">
+                <span class="p-k">Mindset</span
+                ><span class="p-v">Build smart things</span>
+              </div>
+              <div class="p-row">
+                <span class="p-k">Status</span
+                ><span class="p-v" style="color: #4ade80"
+                  >&#9679; Available for hire</span
+                >
+              </div>
+              <div class="p-row">
+                <span class="p-k">Location</span
+                ><span class="p-v">Bangladesh &#127475;&#127465;</span>
+              </div>
+            </div>
+            <div style="margin-top: 1.2rem" class="rv">
+              <div class="ab-rlbl">What makes me different</div>
+              <div style="display: flex; flex-direction: column; gap: 0.45rem">
+                <div
+                  style="
+                    font-size: 0.8rem;
+                    color: rgba(254, 242, 242, 0.5);
+                    line-height: 1.7;
+                    padding: 0.65rem 0.8rem;
+                    border: 1px solid var(--border);
+                    border-left: 2px solid var(--red);
+                    border-radius: 0 3px 3px 0;
+                  "
+                >
+                  &#128640; I adapt to new technologies in a short time
+                </div>
+                <div
+                  style="
+                    font-size: 0.8rem;
+                    color: rgba(254, 242, 242, 0.5);
+                    line-height: 1.7;
+                    padding: 0.65rem 0.8rem;
+                    border: 1px solid var(--border);
+                    border-left: 2px solid rgba(251, 191, 36, 0.5);
+                    border-radius: 0 3px 3px 0;
+                  "
+                >
+                  &#128161; Always curious about new tools &amp; patterns
+                </div>
+                <div
+                  style="
+                    font-size: 0.8rem;
+                    color: rgba(254, 242, 242, 0.5);
+                    line-height: 1.7;
+                    padding: 0.65rem 0.8rem;
+                    border: 1px solid var(--border);
+                    border-left: 2px solid rgba(34, 197, 94, 0.4);
+                    border-radius: 0 3px 3px 0;
+                  "
+                >
+                  &#127919; Focus on building smart, feature-rich apps
+                </div>
+                <div
+                  style="
+                    font-size: 0.8rem;
+                    color: rgba(254, 242, 242, 0.5);
+                    line-height: 1.7;
+                    padding: 0.65rem 0.8rem;
+                    border: 1px solid var(--border);
+                    border-left: 2px solid rgba(59, 130, 246, 0.4);
+                    border-radius: 0 3px 3px 0;
+                  "
+                >
+                  &#127760; Wide stack &mdash; from pixels to production servers
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-section rv">
+          <div class="skills-header">
+            <span class="mh-num" style="border: none; padding: 0"
+              >Stack //</span
+            >
+            <span class="skills-header-title">Full Tech Arsenal</span>
+            <div class="mh-line"></div>
+            <span class="skill-tier-badge stb-high">High Focus</span>
+            <span class="skill-tier-badge stb-mid" style="margin-left: 0.4rem"
+              >Mid Level</span
+            >
+          </div>
+          <div class="skill-tiers">
+            <div class="skill-tier tier-high">
+              <div class="tier-label">
+                <span class="tier-label-text"
+                  >High Focus &mdash; Primary Stack</span
+                >
+                <div class="tier-line"></div>
+                <span class="tier-desc">Daily tools</span>
+              </div>
+              <div class="skill-groups">
+                <div>
+                  <div class="sg-label">Frontend Core</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-hot">HTML5</span
+                    ><span class="chip chip-hot">CSS3</span
+                    ><span class="chip chip-hot">JavaScript ES6+</span
+                    ><span class="chip chip-hot">SCSS</span
+                    ><span class="chip chip-hot">Tailwind CSS</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Frontend Frameworks and Technology</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-hot">React.js</span
+                    ><span class="chip chip-hot">Next.js</span
+                    ><span class="chip chip-hot">Angular</span
+                    ><span class="chip chip-hot">Redux</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Backend</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-hot">Node.js</span
+                    ><span class="chip chip-hot">Express.js</span
+                    ><span class="chip chip-hot">Django</span
+                    ><span class="chip chip-hot">FastAPI</span
+                    ><span class="chip chip-hot">.NET</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Databases</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-hot">PostgreSQL</span
+                    ><span class="chip chip-hot">MongoDB</span
+                    ><span class="chip chip-hot">Redis</span
+                    ><span class="chip chip-hot">Firebase</span
+                    ><span class="chip chip-hot">Elasticsearch</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">AI / Machine Learning</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-ai">Scikit-learn</span
+                    ><span class="chip chip-ai">TensorFlow</span
+                    ><span class="chip chip-ai">Pandas</span
+                    ><span class="chip chip-ai">NumPy</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">AI Technology</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-ai">ChatGPT</span
+                    ><span class="chip chip-ai">Claude</span
+                    ><span class="chip chip-ai">DeepSeek</span
+                    ><a
+                      href="https://aistudio.google.com/"
+                      target="_blank"
+                      class="chip chip-ai"
+                      style="text-decoration: none"
+                      >AI Studio</a
+                    ><span class="chip chip-ai">Ollama (local)</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Dev Environment</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-tool">VS Code</span
+                    ><span class="chip chip-tool">Git &amp; GitHub</span
+                    ><span class="chip chip-tool">Jupyter Notebook</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-tier tier-mid">
+              <div class="tier-label">
+                <span class="tier-label-text" style="color: #fbbf24"
+                  >Mid Level &mdash; Growing Skills</span
+                >
+                <div class="tier-line"></div>
+                <span class="tier-desc">Active use</span>
+              </div>
+              <div class="skill-groups">
+                <div>
+                  <div class="sg-label">Mobile Development</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-mobile">Flutter</span
+                    ><span class="chip chip-mobile">Rx-Dart</span
+                    ><span class="chip chip-mobile">Provider</span
+                    ><span class="chip chip-mobile">BLoC</span
+                    ><span class="chip chip-mobile">Android (Java)</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Real-Time &amp; Automation</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-learn">Socket.IO</span
+                    ><span class="chip chip-learn">WebRTC</span
+                    ><span class="chip chip-learn">Puppeteer</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Additional Frameworks</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-learn">MobX</span
+                    ><span class="chip chip-learn">NgRx</span
+                    ><span class="chip chip-learn">Nuxt.js</span
+                    ><span class="chip chip-learn">Vue.js</span
+                    ><span class="chip chip-learn">Vuex</span
+                    ><span class="chip chip-learn">jQuery</span
+                    ><span class="chip chip-learn">Bootstrap</span
+                    ><span class="chip chip-learn">Laravel</span
+                    ><span class="chip chip-learn">MySQL</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="sg-label">Design Tools</div>
+                  <div class="sg-chips">
+                    <span class="chip chip-tool">Adobe XD</span
+                    ><span class="chip chip-tool">Illustrator</span
+                    ><span class="chip chip-tool">XAMPP</span
+                    ><span class="chip chip-tool">MongoDB Compass</span>
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 1rem;
+                    border: 1px solid var(--border);
+                    border-left: 2px solid rgba(251, 191, 36, 0.4);
+                    border-radius: 0 3px 3px 0;
+                    background: rgba(251, 191, 36, 0.03);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: var(--mono);
+                      font-size: 0.58rem;
+                      color: #fbbf24;
+                      letter-spacing: 0.1em;
+                      text-transform: uppercase;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    Philosophy
+                  </div>
+                  <p
+                    style="
+                      font-size: 0.78rem;
+                      color: rgba(254, 242, 242, 0.42);
+                      line-height: 1.75;
+                    "
+                  >
+                    My real edge isn't the list &mdash; it's how fast I can add
+                    to it. Always interested in new technology, I adapt in
+                    record time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects">
+      <div class="masthead">
+        <span class="mh-num">02 //</span>
+        <span class="mh-title">Featured Work</span>
+        <div class="mh-line"></div>
+        <span class="mh-tag">Projects</span>
+      </div>
+      <div class="proj-grid">
+        <div class="pj rv">
+          <div class="pj-lbl">Project 01</div>
+          <span class="pj-ico">&#128200;</span>
+          <h3 class="pj-title">NexTrade</h3>
+          <p class="pj-desc">
+            A trading-focused web application built with Angular on the frontend
+            and Express.js on the backend, styled with SCSS. Uses Firebase for
+            backend services and is deployed on Vercel.
+          </p>
+          <div class="pj-tags">
+            <span class="pj-tag">Angular</span
+            ><span class="pj-tag">Express.js</span
+            ><span class="pj-tag">SCSS</span
+            ><span class="pj-tag">Firebase</span>
+          </div>
+          <a
+            href="https://nex-client-kappa.vercel.app/"
+            class="pj-link"
+            target="_blank"
+            >Visit Site &rarr;</a
+          >
+        </div>
+        <div class="pj rv">
+          <div class="pj-lbl">Project 02</div>
+          <span class="pj-ico">&#128176;</span>
+          <h3 class="pj-title">Chain Hook Wallet</h3>
+          <p class="pj-desc">
+            A modern web app built with React.js on the frontend and Django on
+            the backend, styled with Tailwind CSS. Uses PostgreSQL for the
+            database and is deployed on Vercel.
+          </p>
+          <div class="pj-tags">
+            <span class="pj-tag">React.js</span
+            ><span class="pj-tag">Django</span
+            ><span class="pj-tag">Tailwind CSS</span
+            ><span class="pj-tag">PostgreSQL</span>
+          </div>
+          <a href="https://chain-hook-client.vercel.app" class="pj-link"
+            >Visit Site &rarr;</a
+          >
+        </div>
+        <div class="pj rv">
+          <div class="pj-lbl">Project 03</div>
+          <span class="pj-ico">&#128085;</span>
+          <h3 class="pj-title">Lyren</h3>
+          <p class="pj-desc">
+            A full-stack app built with Next.js and .NET, using PostgreSQL and
+            Redis, styled with raw CSS. Deployed on Vercel and Render.
+          </p>
+          <div class="pj-tags">
+            <span class="pj-tag">Next.js</span><span class="pj-tag">.NET</span
+            ><span class="pj-tag">PostgreSQL</span
+            ><span class="pj-tag">Redis</span><span class="pj-tag">CSS</span>
+          </div>
+          <a href="https://lyren-client.vercel.app" class="pj-link"
+            >Visit Site &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- LEARNING -->
+    <div id="learning">
+      <div class="masthead">
+        <span class="mh-num">03 //</span>
+        <span class="mh-title">Growth &amp; Learning</span>
+        <div class="mh-line"></div>
+        <span class="mh-tag">Currently Studying</span>
+      </div>
+      <div class="learn-grid">
+        <div class="lc rv">
+          <div class="lc-num">01</div>
+          <span class="lc-ico">&#9883;&#65039;</span>
+          <div class="lc-t">React &amp; Next.js</div>
+          <p class="lc-d">
+            Advanced patterns, SSR/SSG, App Router &mdash; building
+            production-grade UIs.
+          </p>
+        </div>
+        <div class="lc rv">
+          <div class="lc-num">02</div>
+          <span class="lc-ico">&#129504;</span>
+          <div class="lc-t">AI &amp; Machine Learning</div>
+          <p class="lc-d">
+            TensorFlow, Sklearn, Pandas &mdash; integrating intelligence into
+            real apps.
+          </p>
+        </div>
+        <div class="lc rv">
+          <div class="lc-num">03</div>
+          <span class="lc-ico">&#128241;</span>
+          <div class="lc-t">Flutter &amp; Mobile</div>
+          <p class="lc-d">
+            BLoC pattern, Rx-Dart, cross-platform mobile development.
+          </p>
+        </div>
+        <div class="lc rv">
+          <div class="lc-num">04</div>
+          <span class="lc-ico">&#9889;</span>
+          <div class="lc-t">Real-Time Systems</div>
+          <p class="lc-d">
+            Socket.IO, WebRTC &mdash; building live, collaborative, and
+            streaming features.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI CHAT -->
+    <div class="ai-section" id="ai-chat">
+      <div class="ai-masthead">
+        <span class="mh-num">04 //</span>
+        <span class="mh-title">AI Assistant</span>
+        <div class="mh-line"></div>
+        <span class="ai-mh-badge">&#10022; Powered by AI</span>
+        <span class="mh-tag" style="margin-left: auto">Ask me anything</span>
+      </div>
+      <div class="ai-layout">
+        <div class="ai-sidebar">
+          <div>
+            <div class="ai-side-title">
+              Chat with my <span>AI</span><br />Assistant
+            </div>
+            <p class="ai-side-sub">
+              Ask about my skills, projects, experience, or anything about web
+              development. I'm here to help!
+            </p>
+          </div>
+          <div class="ai-suggestions">
+            <div class="ai-sug-lbl">Quick Questions</div>
+            <button class="ai-sug" onclick="sendSuggestion(this)">
+              What is Asraful's main tech stack?
+            </button>
+            <button class="ai-sug" onclick="sendSuggestion(this)">
+              What projects has he built?
+            </button>
+            <button class="ai-sug" onclick="sendSuggestion(this)">
+              Is he available for hire?
+            </button>
+            <button class="ai-sug" onclick="sendSuggestion(this)">
+              What is he currently learning?
+            </button>
+            <button class="ai-sug" onclick="sendSuggestion(this)">
+              How can I contact Asraful?
+            </button>
+          </div>
+        </div>
+        <div class="ai-chat-panel">
+          <div class="chat-topbar">
+            <div class="chat-topbar-left">
+              <div class="chat-avatar">AI</div>
+              <div>
+                <div class="chat-title">Asraful's AI Assistant</div>
+                <div class="chat-status">
+                  &#9679; Online &mdash; Ask me anything
+                </div>
+              </div>
+            </div>
+            <button class="chat-clear" onclick="clearChat()">Clear Chat</button>
+          </div>
+          <div class="chat-messages" id="chatMessages"></div>
+          <div
+            class="typing-indicator"
+            id="typingIndicator"
+            style="padding: 0 1.5rem 0.75rem"
+          >
+            <div class="typing-avatar">AI</div>
+            <div class="typing-bubble">
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+            </div>
+          </div>
+          <div class="chat-input-wrap">
+            <textarea
+              class="chat-input"
+              id="chatInput"
+              rows="1"
+              placeholder="Ask about Asraful's skills, projects..."
+              onkeydown="
+                if (event.key === 'Enter' && !event.shiftKey) {
+                  event.preventDefault();
+                  sendMessage();
+                }
+              "
+            ></textarea>
+            <button
+              class="chat-send"
+              id="sendBtn"
+              onclick="sendMessage()"
+              title="Send"
+            >
+              &#10148;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="masthead">
+        <span class="mh-num">05 //</span>
+        <span class="mh-title">Get in Touch</span>
+        <div class="mh-line"></div>
+        <span class="mh-tag">Contact</span>
+      </div>
+      <div class="contact-grid">
+        <div class="ct-left rv2">
+          <div class="ct-over">Let's Work Together</div>
+          <h3 class="ct-head">Got a<br />project in<br /><span>mind?</span></h3>
+          <p class="ct-sub">
+            Open to internships, freelance work, collaborations, or just a
+            friendly chat. I'd love to hear from you!
+          </p>
+          <div class="ct-links">
+            <a href="cv.pdf" download="MD_Asraful_Islam_CV.pdf" class="cl"
+              ><div class="cl-ico">&#128196;</div>
+              <div>
+                <div class="cl-lbl">Resume</div>
+                <div class="cl-val">Download CV (PDF)</div>
+              </div></a
+            >
+            <a href="mailto:asraful@email.com" class="cl"
+              ><div class="cl-ico">&#128231;</div>
+              <div>
+                <div class="cl-lbl">Email</div>
+                <div class="cl-val">asraful@email.com</div>
+              </div></a
+            >
+            <a
+              href="https://github.com/asraful808088"
+              class="cl"
+              target="_blank"
+              ><div class="cl-ico">&#128025;</div>
+              <div>
+                <div class="cl-lbl">GitHub</div>
+                <div class="cl-val">github.com/asraful</div>
+              </div></a
+            >
+            <a
+              href="https://www.linkedin.com/in/md-asraful-399a86250/"
+              class="cl"
+              target="_blank"
+              ><div class="cl-ico">&#128188;</div>
+              <div>
+                <div class="cl-lbl">LinkedIn</div>
+                <div class="cl-val">md-asraful-399a86250</div>
+              </div></a
+            >
+            <a href="https://x.com/asraful808088" class="cl" target="_blank"
+              ><div class="cl-ico">&#120143;</div>
+              <div>
+                <div class="cl-lbl">X (Twitter)</div>
+                <div class="cl-val">@asraful808088</div>
+              </div></a
+            >
+            <a
+              href="https://www.kaggle.com/mdasraful00000000"
+              class="cl"
+              target="_blank"
+              ><div class="cl-ico">&#128202;</div>
+              <div>
+                <div class="cl-lbl">Kaggle</div>
+                <div class="cl-val">kaggle.com/mdasraful...</div>
+              </div></a
+            >
+            <div class="cl" style="cursor: default">
+              <div class="cl-ico">&#128205;</div>
+              <div>
+                <div class="cl-lbl">Location</div>
+                <div class="cl-val">Bangladesh &#127475;&#127465;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ct-right">
+          <div class="cform rv">
+            <div class="cf-row">
+              <div class="fg">
+                <label>Name</label
+                ><input type="text" id="cf-name" placeholder="Your name" />
+              </div>
+              <div class="fg">
+                <label>Email</label
+                ><input
+                  type="email"
+                  id="cf-email"
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+            <div class="fg">
+              <label>Subject</label
+              ><input
+                type="text"
+                id="cf-subject"
+                placeholder="I have a project for you!"
+              />
+            </div>
+            <div class="fg">
+              <label>Message</label
+              ><textarea
+                id="cf-message"
+                rows="5"
+                placeholder="Tell me about your idea..."
+              ></textarea>
+            </div>
+            <div
+              id="cf-error"
+              style="
+                display: none;
+                font-family: var(--mono);
+                font-size: 0.68rem;
+                color: var(--red3);
+                letter-spacing: 0.03em;
+              "
+            ></div>
+            <button
+              class="btn-red"
+              id="sb"
+              type="button"
+              style="align-self: flex-start; border: none; cursor: none"
+            >
+              <span id="st">Send Message</span> &#10022;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="f-strip">
+        <span class="f-strip-l"
+          >Asraful Islam &mdash; Full-Stack Developer</span
+        >
+        <span class="f-strip-r"
+          >Bangladesh &#127475;&#127465; &mdash; Vol.01 &mdash; 2025</span
+        >
+      </div>
+      <div class="f-bot">
+        <span class="f-l"
+          >&copy; 2025 MD Asraful Islam. All rights reserved.</span
+        >
+        <a href="#" class="f-r">Back to top &uarr;</a>
+      </div>
+    </footer>
+
+    <button
+      class="fab-chat"
+      onclick="
+        document
+          .getElementById('ai-chat')
+          .scrollIntoView({ behavior: 'smooth' })
+      "
+      title="Chat with AI"
+    >
+      <div class="fab-pulse"></div>
+      &#129302;
+    </button>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
